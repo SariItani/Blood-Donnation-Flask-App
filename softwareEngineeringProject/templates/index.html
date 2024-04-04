@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood Donation Management System</title>
+	<style>
+		/* General Styles */
+		body {
+			background-color: #f0f0f0;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			color: #333333;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Header Styles */
+		header {
+			background-color: #b71c1c;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
+			position: relative;
+		}
+
+		header h1 {
+			font-size: 48px;
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+			text-shadow: 2px 2px #333333;
+		}
+
+		header p {
+			font-size: 24px;
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+			text-shadow: 2px 2px #333333;
+		}
+
+		header:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 20px;
+			background-color: #ffffff;
+			z-index: 1;
+		}
+
+		/* Navigation Styles */
+		nav {
+			background-color: #ffffff;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+			padding: 20px;
+			margin-bottom: 20px;
+			position: relative;
+			z-index: 2;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav li {
+			margin: 0 10px;
+		}
+
+		nav li:last-child a {
+			background-color: #b71c1c;
+			color: #ffffff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		nav li:last-child a:hover {
+			background-color: #ffffff;
+			color: #b71c1c;
+		}
+
+		nav a {
+			color: #333333;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 18px;
+			padding: 10px 20px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		nav a:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+
+		/* Main Content Styles */
+		.main-content {
+			display: flex;
+			flex-wrap: wrap;
+			 justify-content: space-around;
+			align-items: center;
+		}
+
+		.card {
+			background-color: #ffffff;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+			margin: 20px;
+			width: 300px;
+			height: 400px;
+			overflow: hidden;
+			border-radius: 10px;
+			position: relative;
+			transition: all 0.3s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-10px);
+		}
+
+		.card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 10px 10px 0 0;
+		}
+
+		.card h2 {
+			font-size: 24px;
+			margin: 20px;
+			padding: 0;
+			text-align: center;
+			font-weight: bold;
+			color: #333333;
+		}
+
+		.card p {
+			font-size: 16px;
+			margin: 20px;
+			padding: 0;
+			color: #777777;
+			text-align: justify;
+			height: 100px;
+			overflow: hidden;
+		}
+
+		.card a {
+			background-color: #b71c1c;
+			color: #ffffff;
+			display: block;
+			padding: 10px;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			right: 20px;
+		}
+
+		.card a:hover {
+			background-color: #333333;
+		}
+
+		/* Footer Styles */
+		footer {
+			background-color: #333333;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		footer p {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			line-height: 1.6;
+		}
+
+		footer a {
+			color: #ffffff;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		@media (max-width: 768px) {
+			.main-content {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.card {
+				width: 100%;
+				margin: 20px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>YMY Database Management System</h1>
+		<p>Handle Your Data Easily!</p>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="/index">Home</a></li>
+			<li><a href="/view">View</a></li>
+			<li><a href="/add">Add</a></li>
+			<li><a href="/">Logout</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="main-content">
+			<div class="card">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-gXbcKzhFnnZ4lINY8WpenA38sQRNxkfTMw&usqp=CAU" alt="Blood Donation">
+				<h2>Donate Blood</h2>
+				<p> </p>
+				<a href="#">Learn More</a>
+			</div>
+
+			<div class="card">
+				<img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/06/14/Pictures/blood-donation-camp-at-iehe_06c40a76-322c-11e6-a1a7-3aade94c5b51.jpg" alt="Blood Donation">
+				<h2>Search and view Events</h2>
+				<p></p>
+				<a href="#">Learn More</a>
+			</div>
+
+			<div class="card">
+				<img src="https://etimg.etb2bimg.com/photo/92018918.cms" alt="Blood Donation">
+				<h2>Search for Donors or Request</h2>
+				<p></p>
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
